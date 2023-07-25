@@ -15,7 +15,7 @@
 
 /* Home Css */
 .home .homeimg {
-  height: 40%;
+  height: 20%;
   width: 100%;
 }
 
@@ -48,9 +48,11 @@
 .navicon {
   display: none;
 }
-.nav .card {
+.navcard {
+  margin-left: 20vh;
+  display: none;
   font-family: Arial, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: 800;
+  font-weight: 500;
   font-style: bold;
 }
 
@@ -303,7 +305,6 @@ h1 {
 }
 
 .p .prodectdetail .card {
-  width: 100px;
   color: #088178;
   border: 1px solid;
   box-shadow: 10px 20px 30px rgba(120, 125, 178, 0.8);
@@ -429,10 +430,7 @@ option {
     padding: 10% 10% 10% 10%;
     margin-top: 6%;
   }
-  .navdisplay button {
-    width: 20%;
-    margin-left: 80%;
-  }
+
   .navicon {
     display: inline;
     color: white;
@@ -507,6 +505,11 @@ option {
     flex-direction: column;
     color: red;
   }
+
+  /*navbarr css*/
+  .navcard {
+    display: inline;
+  }
   /* Shop Css */
   .datas {
     border-radius: 4px;
@@ -515,9 +518,13 @@ option {
   }
   /* productdetails Css */
   .p {
-    display: grid;
-    text-align: left;
-    width: 100%;
+    margin: 5px 5px 5px 5px;
+  }
+  .card {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
   }
 
   /*Contact Css */

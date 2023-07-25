@@ -32,7 +32,7 @@ function AccountCreationForm(props) {
   return (
     <div claName="login-container">
       <div className="account-creation-form">
-        <h2>Create Account</h2>
+        <h1>Create Account</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Your Name:</label>
