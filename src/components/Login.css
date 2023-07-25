@@ -1,0 +1,76 @@
+.login,
+.account-creation-form {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 50vh;
+  border: 1px solid gray;
+  box-shadow: 2px 5px 1px rgba(190, 60, 60, 0.2);
+  border-radius: 4px;
+  padding-bottom: 13%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: gray;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+input {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input:hover,
+input.active {
+  border: 1px solid #ff8d8d;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff7d7d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff8d8d;
+}
+
+p {
+  color: gray;
+}
