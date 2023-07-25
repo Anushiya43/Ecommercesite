@@ -29,7 +29,7 @@ export default function Cart(props) {
   }
 
   return (
-    <div className="cart">
+    <div className="cartpage">
       <div className={flag ? "show" : "dontshow"}>
         <UserLogin flag={flagvalue} flag1={flagvalue1} userdata={userdata} />
       </div>
@@ -53,6 +53,7 @@ export default function Cart(props) {
                   <td>{c.rate}</td>
                   <td>
                     <select onChange={(e) => setqty([...qty, e.target.value])}>
+                      <option>0</option>
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>

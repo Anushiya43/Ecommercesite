@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Login.css";
 
 function UserLogin(props) {
-  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -16,19 +15,20 @@ function UserLogin(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(props.userdata)
-    let a=0;    
-    props.userdata.map((data)=>{
-      if(data.email===email && data.password===password){
-        a=1;
-      }});
-    if(a){
-    props.flag();
-    }  
+    console.log(props.userdata);
+    let a = 0;
+    props.userdata.map((data) => {
+      if (data.email === email && data.password === password) {
+        a = 1;
+      }
+    });
+    if (a) {
+      props.flag();
+    }
     setEmail("");
     setPassword("");
     console.log(`Email: ${email}, Password: ${password}`);
-  }
+  };
 
   return (
     <div className="login">

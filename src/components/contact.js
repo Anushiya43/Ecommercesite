@@ -4,8 +4,11 @@ export default function Contact() {
   return (
     <div className="Contact">
       <div className="query">
-        <input placeholder="Please type your query here..(eg.I want to track my order)" />
-        <input type="button" classname="ok" value="ok" />
+        <input
+          className="input"
+          placeholder="Please type your query here..(eg.I want to track my order)"
+        />
+        <input type="button" className="ok" value="ok" />
       </div>
       <select>
         <option>What is the issue?</option>

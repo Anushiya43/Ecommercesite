@@ -189,7 +189,7 @@
 
 .heart,
 .cart {
-  color: rgba(196, 60, 60, 0.2);
+  color: rgba(235, 84, 84, 0.8);
 }
 .heart:active,
 .cart:active {
@@ -219,8 +219,12 @@ h1 {
   align-items: center;
   gap: 20px;
 }
-
-.Contact input {
+.Contact .query {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+.Contact .query .input {
   width: 600px;
   height: 55px !important;
   color: #212121;
@@ -228,7 +232,7 @@ h1 {
   padding-left: 12px;
   outline: none;
 }
-.Contact button {
+.Contact .query .ok {
   height: 55px;
   padding: 1px 40px;
   background-color: #333333;
@@ -300,7 +304,7 @@ h1 {
 }
 .p .prodectdetail h4 {
   font-size: 15px;
-  color: #088178;
+  color: #e66182;
   font-weight: 700;
 }
 
@@ -318,8 +322,9 @@ h1 {
 
 /* Cart Css */
 
-.cart {
+.cartpage {
   padding-top: 62px;
+  color: black;
 }
 
 .show {
@@ -329,7 +334,7 @@ h1 {
   display: none;
 }
 
-.cart table,
+.cartpage table,
 tbody,
 thead {
   width: 100%;
@@ -340,15 +345,15 @@ thead {
   align-items: center;
 }
 
-.cart th,
+.cartpage th,
 td {
   text-align: center;
 }
 
-.cart th {
+.cartpage th {
   font-size: 20px;
 }
-.cart select,
+.cartpage select,
 option {
   border: none;
   padding: 10px 20px;
@@ -417,7 +422,12 @@ option {
   .displayflex {
     display: none;
   }
-
+  .nav {
+    display: flex;
+    color: white;
+    gap: 2px;
+    font-size: 35px;
+  }
   .navdisplaym {
     position: absolute;
     background-color: rgba(196, 60, 60, 0.9);
@@ -429,15 +439,6 @@ option {
     font-size: 36px;
     padding: 10% 10% 10% 10%;
     margin-top: 6%;
-  }
-
-  .navicon {
-    display: inline;
-    color: white;
-    font-family: Arial, Cambria, Cochin, Georgia, Times, "Times New Roman",
-      serif;
-    font-weight: 800;
-    font-style: bold;
   }
 
   /* Home Css */
@@ -536,11 +537,8 @@ option {
 
   .About h1 {
     margin: -50px 30px 30px 5px;
-    background-image: url("./backgroundimages/aboutus-title.png");
-    background-repeat: no-repeat;
-    background-position: top;
+
     padding: 25px 10px 20px;
-    color: #fff;
   }
 
   .About .banner {
@@ -560,7 +558,6 @@ option {
   .h3,
   .h4 {
     width: fit-content;
-    background-image: url("./backgroundimages/aboutnoticebody.png");
   }
 
   .About .banner span,
@@ -598,23 +595,24 @@ option {
   .Contact {
     margin-top: -50px;
     background-color: rgba(196, 60, 60, 0.2);
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
-  .query {
+  .Contact .query {
     display: flex;
     gap: 5px;
   }
-  .Contact input {
+  .Contact .query .input {
     width: 200px;
     height: 40px !important;
     color: #212121;
     border: none;
     outline: none;
   }
-  .Contact .ok {
+  .Contact .query .ok {
     width: 50px;
-    height: 39px;
-    margin-top: 20px;
+    height: 40px;
     background-color: #333333;
     border: none;
     outline: none;
