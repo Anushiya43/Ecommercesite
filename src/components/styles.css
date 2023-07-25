@@ -32,10 +32,10 @@
   justify-content: space-between;
   padding: 10px 12px;
 }
-
-.navdisplay button {
-  display: none;
+.nav{
+  display:none;
 }
+
 .navdisplay {
   display: flex;
   column-gap: 15px;
