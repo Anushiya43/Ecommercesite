@@ -526,6 +526,62 @@ option {
     justify-content: center;
     gap: 1px;
   }
+  /*About css*/
+  .About {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 2px 2px 2px;
+    gap: -10px;
+  }
+
+  .About h1 {
+    margin: -50px 30px 30px 5px;
+    background-image: url("./backgroundimages/aboutus-title.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 25px 10px 20px;
+    color: #fff;
+  }
+
+  .About .banner {
+    width: fit-content;
+    margin-left: 20%;
+    margin-top: 2%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .About .banner .h2,
+  .h3,
+  .h4 {
+    width: fit-content;
+    background-image: url("./backgroundimages/aboutnoticebody.png");
+    background-repeat: round;
+  }
+
+  .About .banner span,
+  .h4 {
+    color: red;
+  }
+
+  .About .banner h1,
+  .h2,
+  .h3,
+  .h4 {
+    width: fit-content;
+    padding: 0 0 0 0;
+  }
+
+  .About .picture img {
+    height: 50px;
+    width: 50px;
+    margin-top: -150px;
+  }
+  .About .paragraph {
+    width: fit-content;
+    margin: 0 20%;
+  }
 
   /*Contact Css */
   /* Cart Css */
