@@ -3,9 +3,9 @@ export default function Contact() {
     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png";
   return (
     <div className="Contact">
-      <div>
+      <div className="query">
         <input placeholder="Please type your query here..(eg.I want to track my order)" />
-        <button>0k</button>
+        <input type="button" classname="ok" value="ok" />
       </div>
       <select>
         <option>What is the issue?</option>
