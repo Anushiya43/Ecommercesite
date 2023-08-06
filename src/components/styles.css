@@ -92,7 +92,7 @@
 }
 
 .About h1 {
-  background-image: url("./backgroundimages/aboutus-title.png");
+  background-image: url("https://www.bookswagon.com/images/aboutus-title.png");
   background-repeat: no-repeat;
   background-position: top;
   padding: 38px 50px 80px;
@@ -111,7 +111,7 @@
 .h3,
 .h4 {
   width: 75%;
-  background-image: url("./backgroundimages/aboutnoticebody.png");
+  background-image: url("https://www.bookswagon.com/images/aboutnoticebody.png");
   background-repeat: fill;
 }
 
